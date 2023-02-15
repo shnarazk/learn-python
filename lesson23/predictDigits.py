@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-import sklearn.databases
+import sklearn.datasets
 import sklearn.svm
-import PIL.image
-import numby
+import PIL.Image
+import numpy
 
-def imagetoData(filename):
+def imageToData(filename):
     grayImage = PIL.Image.open(filename).convert("L")
-    grayImage = grayImage.resize((8, 8), PIL.Image.Resampling)
+    grayImage = grayImage.resize((8, 8), PIL.Image.Resampling.LANCZOS)
     numImage = numpy.asarray(grayImage, dtype = float)
     numImage = 16 - numpy.floor(17 * numImage / 256)
     numImage = numImage.flatten()
@@ -20,4 +20,4 @@ def predictDigits(data):
     n = clf.predict([data])
     print("result: ", n)
 
-predictDigits(imagetoData("2.png"))
+predictDigits(imageToData("2.png"))
