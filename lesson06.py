@@ -2,7 +2,7 @@
 from turtle import *
 
 shape("turtle")
-col = ["orange", "limegreen", "gold", "plum", "tomato"]
+col: list[str] = ["orange", "limegreen", "gold", "plum", "tomato"]
 # forward(100)
 pensize(5)
 for i in range(5):
