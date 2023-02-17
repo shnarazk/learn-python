@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 from turtle import *
+import math
 
 shape("turtle")
 col: list[str] = ["orange", "limegreen", "gold", "plum", "tomato"]
-# forward(100)
 pensize(5)
-for i in range(5):
-    color(col[i])
-    circle(100)
-    forward(197)
-    left(72)
+n: int = 6
+r: int = 192
+for i in range(n):
+    color(col[i % 5])
+    circle(r/2)
+    forward(r)
+    left(360 / n)
 done() 
  
