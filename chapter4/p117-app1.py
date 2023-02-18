@@ -1,4 +1,4 @@
-#!/bin/usr/env python
+#!/usr/bin/env python
 import tkinter as tk
 
 root = tk.Tk()
