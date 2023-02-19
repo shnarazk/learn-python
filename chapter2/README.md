@@ -1,10 +1,6 @@
-# Basics of the language
+# Prepare
 
-- lesson08: variable and types
-- lesson09: `string` type
-- lesson10: relation of types
-- lesson11: `list` type
-- lesson12: 3 control structures
-- lesson13: control structure `if` sentence
-- lesson14: function
-- lesson15: package
+- lesson03: IDLE
+- lesson04: make outputs
+- lesson05: scripting
+- lesson06: turtle graphics
