@@ -8,4 +8,10 @@ for score in scores:
         print("OK")
     else:
         print("bad luck")
-    
+
+for score in scores:
+    print(score[0], end = ": ")
+    if score[1] >= 60:
+        print("OK")
+    else:
+        print("bad luck")
