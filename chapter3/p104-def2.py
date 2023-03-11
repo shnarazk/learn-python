@@ -33,7 +33,10 @@ print(postTaxPrice2(100, 3), "円")
 
 print(postTaxPrice2(160), "円")
 print(postTaxPrice2(169, 15), "円")
+print(postTaxPrice2(169, tax=15), "円")
 print(postTaxPrice2(160, 3), "円")
+print(postTaxPrice2(160, tax=3), "円")
+print(postTaxPrice2(160, tax=3%), "円")
 
 ################################
 # 3. この関数は2行にまとめられるのでは
